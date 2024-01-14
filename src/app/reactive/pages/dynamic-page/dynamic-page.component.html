@@ -1,0 +1,89 @@
+<h2>Reactive: <small> Dynamic </small></h2>
+<hr>
+
+<form autocomplete="off">
+
+  <!-- Name -->
+  <div class="mb-3 row">
+    <label class="col-sm-3 col-form-label">Name</label>
+    <div class="col-sm-9">
+      <input class="form-control"
+             placeholder="Name of person">
+      <span class="form-text text-danger">
+        error message
+      </span>
+    </div>
+  </div>
+
+  <!-- Add favorite -->
+  <div class="mb-3 row">
+    <label class="col-sm-3 col-form-label">Add</label>
+    <div class="col-sm-9">
+
+      <div class="input-group">
+        <input class="form-control"
+               placeholder="Add Favorite">
+
+
+        <button class="btn btn-outline-primary"
+                type="button">
+          Add Favorite
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Favorite game list -->
+  <div class="mb-3 row">
+    <label class="col-sm-3 col-form-label">Favorite</label>
+    <div class="col-sm-9">
+
+      <div class="mb-1">
+
+        <div class="input-group">
+          <input class="form-control">
+
+          <button class="btn btn-outline-danger"
+                  type="button">
+            Eliminate
+          </button>
+        </div>
+        <span class="form-text text-danger">
+          This filed is required
+        </span>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <button type="submit"
+              class="btn btn-primary float-end"
+      >
+        <!-- [disabled]="myForm.invalid" -->
+        Save
+      </button>
+    </div>
+  </div>
+
+
+</form>
+
+
+
+<span>Valid</span>
+<pre>{{ 'Object' | json }}</pre>
+<br>
+
+<span>Value</span>
+<pre>{{ 'Object' | json }}</pre>
+<br>
+
+<span>Add Game</span>
+<pre>{{ 'Object' | json }}</pre>
+<pre>{{ 'Object' | json }}</pre>
