@@ -15,7 +15,7 @@
                  formControlName="name"
                  placeholder="Name">
 
-          <span class="form-text text-danger">
+          <span *ngIf="isValidField('name')" class="form-text text-danger">
             It must be in first and last name format
           </span>
         </div>
@@ -29,7 +29,7 @@
                  class="form-control"
                  formControlName="email"
                  placeholder="User email">
-          <span class="form-text text-danger">
+          <span *ngIf="isValidField('email')" class="form-text text-danger">
             Email error message
           </span>
         </div>
@@ -43,7 +43,7 @@
                  class="form-control"
                  formControlName="username"
                  placeholder="Username">
-          <span class="form-text text-danger">
+          <span *ngIf="isValidField('username')" class="form-text text-danger">
             The username cannot be Strider
           </span>
         </div>
@@ -58,7 +58,7 @@
                  formControlName="password"
                  placeholder="Password of your account">
 
-          <span class="form-text text-danger">
+          <span *ngIf="isValidField('password')" class="form-text text-danger">
             The password must be greater than 6 characters.
           </span>
         </div>
@@ -73,7 +73,7 @@
                  formControlName="password2"
                  placeholder="Confirm password">
 
-          <span class="form-text text-danger">
+          <span *ngIf="isValidField('password2')" class="form-text text-danger">
             Passwords must be the same
           </span>
         </div>
