@@ -75,21 +75,27 @@
   <div class="col">
 
     <span>Valid</span>
-    <pre>{{ 'Object' | json }}</pre>
+    <pre>{{ myForm.valid | json }}</pre>
 
     <span>Pristine</span>
-    <pre>{{ 'Object' | json }}</pre>
+    <pre>{{ myForm.pristine | json }}</pre>
 
     <span>Touched</span>
-    <pre>{{ 'Object' | json }}</pre>
+    <pre>{{ myForm.touched | json }}</pre>
 
     <span>Value</span>
-    <pre>{{ 'Object' | json }}</pre>
+    <pre>{{ myForm.value | json }}</pre>
 
     <span>Price</span>
-    <pre>{{ 'Object' | json }}</pre>
+    <pre>{{ myForm.controls['price'].value | json }}</pre>
+
+    <span>Price - Errors</span>
+    <pre>{{ myForm.controls['price'].errors | json }}</pre>
 
     <span>Product</span>
-    <pre>{{ 'Object' | json }}</pre>
+    <pre>{{ myForm.controls['name'].value | json }}</pre>
+
+    <span>Product - Errors</span>
+    <pre>{{ myForm.controls['name'].errors | json }}</pre>
   </div>
 </div>
