@@ -60,4 +60,8 @@ export class DynamicPageComponent {
     return formArray.controls[index].errors
       && formArray.controls[index].touched;
   }
+
+  onDeleteFavorite(index: number): void {
+    this.favoriteGames.removeAt(index);
+  }
 }

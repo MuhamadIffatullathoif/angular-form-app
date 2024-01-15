@@ -45,7 +45,8 @@
         <div class="input-group">
           <input class="form-control" [formControlName]="i">
 
-          <button class="btn btn-outline-danger"
+          <button (click)="onDeleteFavorite(i)"
+                  class="btn btn-outline-danger"
                   type="button">
             Eliminate
           </button>
