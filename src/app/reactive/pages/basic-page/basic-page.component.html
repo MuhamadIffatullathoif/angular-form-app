@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col">
 
-    <form autocomplete="off">
+    <form [formGroup]="myForm" (ngSubmit)="onSave()" autocomplete="off">
 
       <!-- Product field -->
       <div class="mb-3 row">
@@ -13,7 +13,9 @@
 
           <input type="text"
                  class="form-control"
-                 placeholder="Product name">
+                 placeholder="Product name"
+                 formControlName="name"
+          >
 
           <span class="form-text text-danger">
             <!-- it must be 3 letters -->
@@ -28,7 +30,9 @@
         <div class="col-sm-9">
           <input type="number"
                  class="form-control"
-                 placeholder="Price of the product">
+                 placeholder="Price of the product"
+                 formControlName="price"
+          >
           <span class="form-text text-danger">
             The price must be 0 or greater
           </span>
@@ -41,7 +45,9 @@
         <div class="col-sm-9">
           <input type="number"
                  class="form-control"
-                 placeholder="Product stock">
+                 placeholder="Product stock"
+                 formControlName="inStorage"
+          >
 
           <span class="form-text text-danger">
             Stock must be 0 or greater
